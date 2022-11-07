@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class fizikdalgaboyunuhesaplayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+        System.out.println("freakansı giriniz");
+        double f=input.nextDouble();
+        System.out.println("hızı giriniz");
+        int v=input.nextInt();
+        double dalga_b= v*f;
+        System.out.println("dalga boyu "+dalga_b);
+	}
+
+}
