@@ -9,16 +9,15 @@ public class girilenpayvepaydayagöresayınınistenilenbasamağınıhesaplamayan
         System.out.println("paydayı giriniz");
         int payda= input.nextInt();
         System.out.println("istenilen basamak değerini giriniz");
-        int b= input.nextInt();
-        int c;
+        int d= input.nextInt();
         int B=pay/payda;
-        for(int i=1;i<=b;i++)
+        for(int i=1;i<=d;i++)
         {
-            c=B%10;
+            int k=B%10;
             B=B/10;
-            if(i==b)
+            if(i==d)
             {
-            	 System.out.println("istenilen basamak değeri = "+c);
+            	 System.out.println("istenilen basamak değeri = "+k);
             }
            
         }
