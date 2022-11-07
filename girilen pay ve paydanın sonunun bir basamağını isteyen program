@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class girilenpayvepaydayagöresayınınistenilenbasamağınıhesaplamayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input =new Scanner(System.in);
+        System.out.println("payı giriniz");
+        int pay=input.nextInt();
+        System.out.println("paydayı giriniz");
+        int payda= input.nextInt();
+        System.out.println("istenilen basamak değerini giriniz");
+        int b= input.nextInt();
+        int c;
+        int B=pay/payda;
+        for(int i=1;i<=b;i++)
+        {
+            c=B%10;
+            B=B/10;
+            if(i==b)
+            {
+            	 System.out.println("istenilen basamak değeri = "+c);
+            }
+           
+        }
+        
+     
+        
+	}
+
+}
