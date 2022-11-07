@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class yıldızyazdırma3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		System.out.println("satır sayısını giriniz");
+		int satır=input.nextInt();
+		int s=1;
+        for(int i=1;i<=satır;i++)
+        {
+        	for(int j=s; j<=satır; j++)
+        	{
+        		System.out.print("*");
+        		
+        	}
+        	s++;
+        	System.out.println();
+        	
+        }
+	}
+
+}
