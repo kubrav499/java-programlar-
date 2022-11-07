@@ -1,0 +1,15 @@
+import static java.lang.Math.PI;
+import java.util.Scanner;
+public class daireninalanınıvehacminihesaplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner  input = new Scanner(System.in);
+        System.out.println("yarıçapı(r) giriniz ");
+        double r = input.nextDouble();
+        double hacim= 4/3*PI*r*r*r;
+        double alan=4*r*r;
+        System.out.println("hacim "+hacim+"alan "+alan);
+	}
+
+}
