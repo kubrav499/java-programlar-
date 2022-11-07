@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class merkezcilivmeyihesaplayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		System.out.println("hızı giriniz");
+		int v=input.nextInt();
+		System.out.println("yarıçapı giriniz");
+		int r=input.nextInt();
+        double a=v*v/r;
+        System.out.println("merkezcil ivme (a)= " +a);
+	}
+
+}
