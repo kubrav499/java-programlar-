@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class ikisayınınçarpımıçarpmaoperatörüolmadan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("birinici sayı");
+		int n1=input.nextInt();
+		System.out.println("ikinci sayı");
+		int n2=input.nextInt();
+		int çarpma=1;
+        for(int i=1;i<=n2;i++)
+        {
+        	çarpma*=n1;
+        }
+        System.out.println("çarpma "+çarpma);
+	}
+
+}
