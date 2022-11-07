@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class potansiyelkinetikenerjihesaplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner input =new Scanner(System.in);
+       
+       System.out.println("kütleyi(m)giriniz");
+       double kutle=input.nextDouble();
+       System.out.println("hızı(v) giriniz");
+       int hız=input.nextInt();
+       System.out.println("yer çekim ivmesini (g) giriniz");
+       double g=input.nextDouble();
+       System.out.println("yükseklik(h) giriniz");
+       double yukseklik=input.nextDouble();
+       double kinetik_e =(double)1/2*kutle*hız*hız;
+       double potansiyel_e =(double)kutle*g*yukseklik;
+       System.out.println("kinetik enerji "+kinetik_e+"potansiyel enerji "+potansiyel_e);
+       
+	}
+}
