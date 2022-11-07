@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class radyanbulma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input =new Scanner(System.in);
+        System.out.println("açı gir");
+        int aci=input.nextInt();
+        double radyan=aci*3.14/180;
+        double grad=aci*200/180;
+        System.out.println("radyan"+radyan);
+        System.out.println("gardayan"+grad);
+        
+	}
+
+}
