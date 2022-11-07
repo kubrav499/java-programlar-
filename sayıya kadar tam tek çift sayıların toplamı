@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class tamçiftteksayılarıntoplamı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input= new Scanner(System.in);
+        int n = input.nextInt();
+        int tek_t=0;
+        int cift_t=0;
+        int toplam=0;
+        for(int i=1;i<=n;i++)
+        {
+           toplam+=i;
+        	
+        }
+        for(int i=2;i<=n;i++)
+        {
+        	if(n%i==0)
+        	{
+        		cift_t+=i;
+        	}
+        	else
+        	{
+        		tek_t+=i;
+        	}
+        	
+        }
+        System.out.println("çift toplam = "+cift_t);
+        System.out.println("tek toplam = "+tek_t);
+        System.out.println("toplam = "+toplam);
+	}
+
+}
