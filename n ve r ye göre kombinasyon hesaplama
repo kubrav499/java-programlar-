@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class belirtilenkombinasyonuyapanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("sayıyı giriniz");
+        int n=input.nextInt();
+        System.out.println("kaçlı kombinasyon");
+        int r=input.nextInt();
+        
+        int f1=1;
+        int f2=1;
+        int f3=1;
+       
+        for(int i=1;i<=n;i++)
+        {
+        	f1*=i;
+        }
+        for(int i=1; i<=r;i++)
+        {
+        	f2*=i;
+        }
+        for(int i=1;i<=(n-r);i++) 
+        {
+        	f3*=i;
+        }
+        double  k=f1/(f2*f3);
+        System.out.println("kombinasyon ="+k);
+	}
+
+}
