@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class özkütlehesaplayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		System.out.println("kütleyi gir");
+		int kutle=input.nextInt();
+		System.out.println("hacim gir");
+		int hacim=input.nextInt();
+        double ozkutle=kutle/hacim;
+        System.out.println("özkütle = "+ozkutle);
+	}
+
+}
