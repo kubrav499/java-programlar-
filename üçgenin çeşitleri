@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class üçgeninçesşitleri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Scanner input=new Scanner(System.in);
+       System.out.println("kenar giriniz");
+       int n1=input.nextInt();
+       System.out.println("kenar giriniz");
+       int n2=input.nextInt();
+       System.out.println(" kenar giriniz");
+       int n3=input.nextInt();
+       if(n1==n2 && n2==n3)
+       {
+    	   
+    	   System.out.println("eşkenar üçgen");
+       }
+       else if(n1==n2 && n2!=n3||n2==n3 && n3!=n1||n1==n3&&n3!=n2)
+       {
+    	   
+    	   System.out.println("ikizkenar üçgen");
+       }
+       else
+       {
+    	   
+    	   System.out.println("çokkenar üçgen");
+       }
+	}
+
+}
