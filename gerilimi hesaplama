@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+public class gerilimihesaplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+        System.out.println("akımı giriniz");
+        int akim=input.nextInt();
+        System.out.println("direnç");
+        int direnç=input.nextInt();
+        int gerilim=direnç*akim;
+        
+        System.out.println("gerilim "+gerilim);
+        
+        
+	}
+
+}
