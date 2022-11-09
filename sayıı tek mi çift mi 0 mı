@@ -11,7 +11,7 @@ public class tekçiftveya0olansayı {
 	        {
 	        	System.out.println("çift sayı");
 	        }
-	        else if(n!=0)
+	        else if(n%2!=0)
 	        {
 	        	System.out.println("tek sayı");
 	        }
