@@ -17,7 +17,7 @@ public class xdeğerininkosinüsünüberlirtilenterimsayısınakadarseriyiaçara
 				f*=j;
 				
 			}
-			t=t+ Math.pow((-1), i)* Math.pow(x, (2*i))/f;
+			t=t+ ( Math.pow((-1), i)* Math.pow(x, (2*i)))/f;
 		}
 		System.out.println(t);
 		
