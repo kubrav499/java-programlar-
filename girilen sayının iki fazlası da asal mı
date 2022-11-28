@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class aveaartı2asalmı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bir asal sayı gir");
+		int n= input.nextInt();
+		boolean asal=true;
+		for(int i=2;i<(n+2);i++)
+		{
+			if( (n+2) % i==0)
+			{
+				asal=false;
+				
+			}
+			
+		}
+		if(asal==false)
+		{
+			System.out.println("sayı bir chen asal değidir");
+		}
+		else
+		{
+			System.out.println("sayı bir chen asal sayısıdır");
+		}
+
+	}
+
+}
