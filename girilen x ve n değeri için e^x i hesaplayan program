@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class girilenxvendeğeriiçineüssüxihesaplayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		System.out.println("x'i giriniz");
+		int x=input.nextInt();
+		System.out.println("n'i giriniz");
+		int n=input.nextInt();
+        double sonuç=Math.pow((1+x/n) , n);
+        System.out.println("sonuç "+sonuç);
+
+	}
+
+}
