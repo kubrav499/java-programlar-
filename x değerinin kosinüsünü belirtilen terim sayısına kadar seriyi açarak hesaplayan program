@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class xdeğerininkosinüsünüberlirtilenterimsayısınakadarseriyiaçarakhesaplayanprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		System.out.println("x i gir");
+		double x= input.nextDouble();
+		System.out.println("n i gir");
+		int n= input.nextInt();
+		double t=1;
+		for(int i=1;i<=n;i++)	
+		{
+			int f=1;
+			for(int j=1;j<=2*i;j++)	
+			{
+				f*=j;
+				
+			}
+			t=t+ Math.pow((-1), i)* Math.pow(x, (2*i))/f;
+		}
+		System.out.println(t);
+		
+		
+
+	}
+
+}
