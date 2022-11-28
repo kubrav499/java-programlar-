@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class pisagorüçlemesi {
+
+			public static void main(String[] args) {
+				// TODO Auto-generated method stub
+				Scanner input= new Scanner(System.in);
+				System.out.println("bir sayı gir");
+				int n= input.nextInt();
+				int c;
+				
+				for(int a=1;a<=n-1;a++)
+				{
+					for(int b=a+1;b<=n-a;b++)
+					{
+					    c=n-(a+b);
+						if(a*a+b*b==c*c)
+						{
+							System.out.println(a+b+c+a*b*c);
+						}
+					}
+				
+			    }
+
+		
+	
+
+	}
+
+}
