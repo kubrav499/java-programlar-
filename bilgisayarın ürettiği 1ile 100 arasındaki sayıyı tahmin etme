@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class bilgisayarürettiği1ile100arasındakisayıyıtahminetme {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+	     int s=0;
+	     Random rnd= new Random();
+	     int random=rnd.nextInt(99)+1;
+	     while(true) {
+	        System.out.println("sayıyı gir");
+		    int tahmin =input.nextInt();
+		    s++;
+	        if(tahmin<random)
+	        {
+	    	    System.out.println("daha büyük sayı giriniz");
+	        }
+	        else if(tahmin>random)
+	        {
+	        	System.out.println("daha küçük sayı giriniz");
+	   
+	        }
+	        else if(tahmin==random)
+	        {
+	        	System.out.println("tebrikler doğru tahmin");
+	        	break;
+	        }
+	        System.out.println(s+" tahminde bulundunuz");
+	     }
+
