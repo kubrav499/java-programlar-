@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class mükkemmel_sayı_pazitif_çarpanlarının_toplamları_kendisine_eşit_sayı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bir sayı gir");
+		int n= input.nextInt();
+		int t=0;
+		
+		for(int i=1;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				t+=i;
+			}
+		}
+        if(n==t)
+        {
+        	System.out.println("mükemmel sayı");
+        }
+        else
+        {
+        	System.out.println("mükemmel sayı değildir");
+        }
+	}
+
+}
