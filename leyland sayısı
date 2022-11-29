@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class leyland_sayı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("x i gir");
+		int x= input.nextInt();
+		System.out.println("y i gir");
+		int y= input.nextInt();
+		for(int i=2;i<=x;i++)
+		{
+			for(int j=2;j<=y;j++)
+			{
+			    System.out.println(Math.pow(i,j)+ Math.pow(j, i));
+			}    
+		}
+
+	}
+
+}
