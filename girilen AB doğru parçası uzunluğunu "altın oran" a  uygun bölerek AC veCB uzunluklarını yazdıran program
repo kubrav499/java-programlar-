@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class girilen_AB_doğru_parçası_uzunluğunu_altın_orana_göre_uygun_bölerek_ACveCB_uzunluklarını_yazdıran_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("AB gir ");
+		int AB= input.nextInt();
+		double CB=2*AB/(1+Math.pow(5, 1/2));
+		double AC=AB+CB;
+		System.out.println(AC+" "+CB);
+
+	}
+
+}
