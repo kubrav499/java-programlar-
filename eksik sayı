@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class eksik_sayılar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n= input.nextInt();
+		int t=0;
+		for(int i=1;i<=n;i++)
+		{
+			if(n%i==0)
+			{
+				t=t+i;
+			}
+		}
+		int k=2*n-t;
+		if(t<2*n)
+		{
+			System.out.println("eksik sayıdır eksik miktarı "+ k);
+		}
+		else
+		{
+		    System.out.println("eksik sayı değildir");
+		}
+
+	}
+
+}
