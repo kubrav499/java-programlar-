@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class ik_basamağıda_asal_olan_sayıları_listeleyen_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n= input.nextInt();
+		boolean asalmi=true;
+		for(int i=2;i<7;i++)
+			{
+			   for(int j=2;j<7;i++)
+			   {
+				   if(i==2||i==3||i==5||i==7||j==2 && j==2||j==3||j==5||j==7)
+				   {
+					   System.out.println(10*i+j);
+				   }
+			   }
+			   
+			  
+       		}
+		
+	}
+
+}
