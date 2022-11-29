@@ -1,1 +1,15 @@
+import java.util.Scanner;
+public class girilen_kısa_kenara_göre_altın_üçgenin_tüm_kenarlarını_yazdıran_program {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("a gir ");
+		int a= input.nextInt();
+		double b=a*(1+Math.pow(5, 1/2))/2;
+		System.out.println(a+" "+b+" "+b);
+		
+
+	}
+
+}
