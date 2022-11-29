@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class palindrom_sayı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n= input.nextInt();
+		System.out.println(Math.pow(9*10, (n-1)/2));
+
+	}
+
+}
