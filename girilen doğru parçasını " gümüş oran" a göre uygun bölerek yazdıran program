@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class girilen_doğru_parçasını_gümüş_orana_uygun_bölerek_yazdıran_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("u gir ");
+		int u= input.nextInt();
+        double b=u/(2+Math.pow(2, 5));
+        double a=u-b;
+        System.out.println(a+" "+b);
+	}
+
+}
