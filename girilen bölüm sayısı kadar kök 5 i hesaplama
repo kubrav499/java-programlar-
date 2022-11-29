@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class girilenbölümegörekök5ihesaplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bölüm sayısını gir");
+		int bölüm= input.nextInt();
+		int t=1;
+		for(int i=1;i<=bölüm;i++)
+		{
+			t=4+1/t;
+			
+		}
+		System.out.println(2+1/t);
+
+
+	}
+
+}
