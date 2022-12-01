@@ -10,5 +10,4 @@ public class girilen_doğru_parçasını_gümüş_orana_uygun_bölerek_yazdıran
         double a=u-b;
         System.out.println(a+" "+b);
 	}
-
 }
