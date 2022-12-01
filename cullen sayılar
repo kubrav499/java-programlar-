@@ -6,9 +6,9 @@ public class cullen_sayı {
 		Scanner input = new Scanner(System.in);
 		System.out.println("sayı gir");
 		int n= input.nextInt();
-		for(int i=1;i<n;i++)
+		for(int i=1;i<=n;i++)
 		{
-			System.out.println(i*Math.pow(2, i)+1);
+			System.out.println(i*Math.pow(2, i+1));
 		}
 
 	}
