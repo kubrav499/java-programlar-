@@ -23,3 +23,43 @@ public class ik_basamağıda_asal_olan_sayıları_listeleyen_program {
 	}
 
 }
+(ikinci yöntem )
+
+import java.util.Scanner;
+
+public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n= input.nextInt();
+		int k=n%10;
+		int s=0;
+		while(n>0)
+		{	
+			k=n%10;
+			n=n/10;
+			if(k==2) 
+			{
+				s++;
+				
+			}
+			for(int i=2;i<k;i++)
+			{
+				if(k%i!=0 )
+				{
+					s++;
+				}
+			}	
+		}
+		if(s==2)
+		{
+			System.out.println("iki basamağı da asal");
+		}
+		else
+		{
+			System.out.println("iki basamağı da asal değil");
+		}
+	}
+}
