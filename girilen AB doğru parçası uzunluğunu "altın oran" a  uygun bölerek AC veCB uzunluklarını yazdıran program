@@ -7,7 +7,7 @@ public class girilen_AB_doğru_parçası_uzunluğunu_altın_orana_göre_uygun_b�
 		System.out.println("AB gir ");
 		int AB= input.nextInt();
 		double CB=2*AB/(1+Math.pow(5, 1/2));
-		double AC=AB+CB;
+		double AC=AB-CB;
 		System.out.println(AC+" "+CB);
 
 	}
