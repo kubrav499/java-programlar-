@@ -34,32 +34,38 @@ public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
 		Scanner input = new Scanner(System.in);
 		System.out.println("sayı gir");
 		int n= input.nextInt();
-		int k=n%10;
+		int k;
 		int s=0;
+		boolean asal=true;
 		while(n>0)
-		{	
+		{
 			k=n%10;
-			n=n/10;
-			if(k==2) 
-			{
-				s++;
-				
-			}
-			for(int i=2;i<k;i++)
-			{
-				if(k%i!=0 || k%2==0)
+			n=n/10;  
+			
+		    if(k!=2)
+		    {
+		    	for(int i=2;i<k;i++)
 				{
-					s++;
+					if(k%i==0)
+					{
+						asal=false;
+						
+					}
 				}
-			}	
+		    }
+		    else {
+		    	
+		    	s++;
+		    }
 		}
-		if(s==2)
+		if(asal==true || s==2)
 		{
 			System.out.println("iki basamağı da asal");
 		}
 		else
 		{
-			System.out.println("iki basamağı da asal değil");
+			System.out.println("iki basamağı asal değil");
 		}
+		
 	}
 }
