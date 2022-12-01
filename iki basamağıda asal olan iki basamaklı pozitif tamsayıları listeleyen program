@@ -47,7 +47,7 @@ public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
 			}
 			for(int i=2;i<k;i++)
 			{
-				if(k%i!=0 )
+				if(k%i!=0 || k%2==0)
 				{
 					s++;
 				}
