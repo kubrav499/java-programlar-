@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class armstrong_sayılar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n=input.nextInt();
+		int k,t=0,t1=0,n1=0,s=1;
+		
+		while(n<0)
+		{
+			k=n%10;
+			n=n/10;
+			t++;
+			n1=k*(1*s);
+			s*=10;
+			while(n1<0)
+			{
+				k=n%10;
+				n=n/10;
+				t1+=Math.pow(k, t);
+			}
+			
+		}
+		if(n1==t1)
+		{
+			System.out.println("armstrong sayıdır");
+
+		}
+		else
+		{
+			System.out.println("armstrong sayı değildir");
+
+		}
+		
+
+	}
+
+}
