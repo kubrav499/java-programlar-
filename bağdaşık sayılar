@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class bağdaşık_sayılar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("sayı biri gir");
+		int a= input.nextInt();
+		System.out.println("sayı ikinci sayıyı gir");
+		int b= input.nextInt();
+		int k=a%10 + b%10;
+		a=a/10;
+		b=b/10;
+		int k1=a%10 +b%10;
+		a=a/10;
+		b=b/10;
+		if(k==k1)
+		{
+			System.out.println("bağdaşık sayılar");
+		}
+		else
+		{
+			System.out.println("bağdaşık sayılar değildir");
+		}
+	
+	}
+
+}
