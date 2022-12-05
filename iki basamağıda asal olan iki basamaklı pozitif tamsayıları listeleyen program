@@ -45,11 +45,9 @@ public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
 				{
 					if(k%i==0)
 					{
-						s++;
-						
+						s++;	
 					}
 				}
-
 		}
 		if(s==2)
 		{
@@ -58,7 +56,6 @@ public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
 		else
 		{
 			System.out.println("iki basamağı asal değil");
-		}
-		
+		}	
 	}
 }
