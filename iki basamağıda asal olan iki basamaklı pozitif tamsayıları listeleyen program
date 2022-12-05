@@ -36,29 +36,22 @@ public class iki_basamağıda_asal_olan_sayıları_listeleyen_program {
 		int n= input.nextInt();
 		int k;
 		int s=0;
-		boolean asal=true;
 		while(n>0)
 		{
 			k=n%10;
 			n=n/10;  
-			
-		    if(k!=2)
-		    {
-		    	for(int i=2;i<k;i++)
+		
+		    	for(int i=2;i<=k;i++)
 				{
 					if(k%i==0)
 					{
-						asal=false;
+						s++;
 						
 					}
 				}
-		    }
-		    else {
-		    	
-		    	s++;
-		    }
+
 		}
-		if(asal==true || s==2)
+		if(s==2)
 		{
 			System.out.println("iki basamağı da asal");
 		}
