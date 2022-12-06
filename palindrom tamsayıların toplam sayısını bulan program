@@ -7,8 +7,22 @@ public class palindrom_sayı {
 		Scanner input = new Scanner(System.in);
 		System.out.println("sayı gir");
 		int n= input.nextInt();
-		System.out.println(Math.pow(9*10, (n-1)/2));
+		for(int i=1;i<=9;i++)
+		{
+			for(int j=0;j<=9;j++)
+			{
+				System.out.println(100*i+10*j+i);
+			}
 
+		}
+		for(int i=1;i<=9;i++)
+		{
+			for(int j=0;j<=9;j++)
+			{
+				System.out.println(1000*i+100*j+10*j+i);
+			}
+
+		}
 	}
 
 }
