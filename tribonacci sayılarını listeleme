@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class tribonaci_sayıları_listelem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bir sayı gir");
+		int n= input.nextInt();
+		int a=0,b=1,c=1,d=2;
+		System.out.print("0 1 1 2");
+		for(int i=1;i<=n;i++)
+		{
+			a=b;
+			b=c;
+			c=d;
+			d=a+b+c;
+			
+			System.out.print(" "+d+" ");
+		}
+
+	}
+
+}
+
+
