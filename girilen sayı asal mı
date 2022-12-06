@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class sayı_asal_mı_boot_kullanımı {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("sayı gir");
+		int n= input.nextInt();
+		boolean asalmi=true;
+		for(int i=2;i<n;i++)
+			{
+			   if(n%i==0 )
+			   {
+				
+				   asalmi=false;
+				
+			   }
+			}
+		if(asalmi==false)
+	    {
+			 System.out.println("sayı değildir");
+				
+	    }
+	    else
+		{   
+			 System.out.println("sayı asaldır");
+
+		}
+
+
+	}
+
+}
