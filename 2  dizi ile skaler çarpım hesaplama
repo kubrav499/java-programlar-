@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class diziler_skaler_çarrpım {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int n,t=0;
+		do {
+			System.out.println("dizinin uzunluğunu gir");
+			n=input.nextInt();
+		}while(n<0);
+		
+		int[] A=new int[n];
+		int[] B=new int[n];
+		
+		for(int i=0;i<A.length;i++)
+		{
+			System.out.println("A dizisi için "+(i+1)+"inci eleman");
+			A[i]=input.nextInt();
+			System.out.println("B dizisi için "+(i+1)+"inci eleman");
+			B[i]=input.nextInt();
+			
+		}
+		for(int i=0;i<A.length;i++)
+		{
+			t+= A[i]*B[i];
+			
+		}
+		System.out.println("skaler çarpım = "+t);
+
+	}
+
+}
