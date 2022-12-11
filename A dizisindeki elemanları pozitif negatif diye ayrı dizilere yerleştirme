@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class A_dizisindeki_elemanları_pozitif_negatif_diye_ayırıp_farklı_dizilere_koyma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int n ,s=0,k=0;
+		do {
+			System.out.println("dizinin uzunluğunu gir");
+			n=input.nextInt();
+			
+		}while(n<0);
+		
+		int[] sayi=new int[n];
+		
+		for(int i=0;i<sayi.length;i++)
+		{
+			do {
+				System.out.print((i+1)+"inci sayı ");
+				sayi[i]=input.nextInt();
+				
+			}while(sayi[i]==0);
+			
+		}
+		for(int i=0;i<sayi.length;i++)
+		{
+			if(sayi[i]<0)
+			{
+				s++;
+			}
+			else if(sayi[i]>0)
+			{
+				k++;
+			}
+			
+		}
+		int[] C =new int[s];
+		int[] D =new int[k];
+		for(int i=0;i<sayi.length;i++)
+		{
+			if(sayi[i]<0)
+			{
+				C[i]=sayi[i];
+				
+			}
+			else if(sayi[i]>0)
+			{
+				D[i]=sayi[i];
+			}
+	
+		}
+		System.out.println("C dizisinin karakter sayısı "+s);
+		System.out.println("D dizisinin karakter sayısı "+k);
+
+	}
+
+}
