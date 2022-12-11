@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class yeter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bir sayı gir");
+		int n= input.nextInt();			
+		for(int i=2;i<n;i++)
+		{		
+			boolean asallık1=true,asallık2=true;
+
+			for(int j=2;j<i;j++)
+			{
+				if(i%j==0)
+				{
+					asallık1=false;
+					
+				}	
+	   	}
+			if(asallık1==true)
+			{	
+				for(int j=2;j<i+2;j++)
+				{
+					if((i+2)%j==0)
+					{
+						asallık2=false;
+						
+					}
+				}
+				if(asallık2==true)
+				{
+					System.out.println(i+" "+(i+2));
+        }
+    	}	
+		  
+	  }	
+
+	}
+}
