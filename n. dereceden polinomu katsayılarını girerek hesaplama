@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class diziler_katsayıları_girilen_polinomu_hesaplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		System.out.println("x i gir");
+		int x=input.nextInt();
+		int n;
+		double y=0;
+		
+		do {
+			System.out.print("katsayıların miktarını gir");
+			n=input.nextInt();
+		}while(n<0);
+		
+		int[] katsayi= new int[n];
+		
+		for(int i=0;i<katsayi.length;i++)
+		{
+			System.out.print((i+1)+"inci kat sayı ");
+			katsayi[i]=input.nextInt();
+			y+=katsayi[i]*Math.pow(x, i);
+
+		}
+		System.out.println("polinomun değeri= "+y);
+
+	}
+
+}
