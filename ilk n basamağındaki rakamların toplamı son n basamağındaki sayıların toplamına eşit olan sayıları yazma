@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class ilk_n_basamağındaki_rakamların_toplamı_son_n_basamağının_toplamına_eşit_sayılar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		for(int i=1000;i<=9999;i++)
+		{
+			int r=i,s=0,k,t=0,t1=0;
+			while(s<2)
+			{
+				k=r%10;
+				r=r/10;
+				t+=k;
+				s++;
+				
+			}
+			while(s<4)
+			{
+				k=r%10;
+				r=r/10;
+				t1+=k;
+				s++;
+				
+			}
+			if(t==t1)
+			{
+				System.out.println(i);
+			}
+		}
+
+
+	}
+
+}
