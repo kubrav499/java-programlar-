@@ -1,0 +1,29 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class metni_büyük_küçük_harflerle_rasgele_yazdıran_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("lütfen bir ifade giriniz ");
+		String txt=input.nextLine();
+		Random r= new Random();
+		for(int i=0;i<txt.length();i++)
+		{  
+			int random= r.nextInt(100);
+			if(random%2==0)
+			{
+				System.out.print(Character.toLowerCase(txt.charAt(i)));
+				
+			}
+			else {
+				
+				System.out.print(Character.toUpperCase(txt.charAt(i)));
+			}
+		}
+
+
+	}
+
+}
