@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class metnin_sesli_ve_sessiz_harfleriyle_yeni_metinler_oluşturma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("bir metin giriniz ");
+		String txt=input.nextLine();
+		char[] sesli= {'a','e','u','o','i'};
+		boolean boot=true;
+		for(int i=0; i<txt.length();i++)
+		{
+			char h= Character.toLowerCase(txt.charAt(i));
+			for(int j=0;j<sesli.length;j++)
+			{
+				if(h==sesli[j])
+				{
+					System.out.print(h);	
+				}		
+			}		
+		}
+		System.out.println();
+		for(int i=0; i<txt.length();i++)
+		{
+			char h= Character.toLowerCase(txt.charAt(i));
+			for(int j=0;j<sesli.length;j++)
+			{
+				if(h==sesli[j])
+				{
+					boot=false;
+				}	
+			}
+			if(boot==true)
+			{
+				System.out.print(h);
+			}	
+			
+			
+		}
+
+	}
+
+}
