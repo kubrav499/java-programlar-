@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class metnin_harfi_büyükse_küçük_küçükse_büyük_yapan_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out .println("lütfen bir ifade giriniz ");
+		String txt=input.nextLine();
+		for(int i=0;i<txt.length();i++)
+		{
+		    char h=txt.charAt(i);
+			if(h>=65 && h<=90)
+			{
+				h+=32;
+			}
+			else
+			{
+				h-=32;
+			}
+			System.out.println(h);
+		}
+
+	}
+
+}
