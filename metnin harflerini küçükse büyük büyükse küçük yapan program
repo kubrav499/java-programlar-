@@ -18,7 +18,7 @@ public class metnin_harfi_büyükse_küçük_küçükse_büyük_yapan_program {
 			{
 				h-=32;
 			}
-			System.out.println(h);
+			System.out.println((char)h);
 		}
 
 	}
