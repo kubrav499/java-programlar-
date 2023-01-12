@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class küçük_harfli_metnin_iki_harfini_büyük_iki_harfini_küçük_yapan_program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("lütfen bir ifade giriniz ");
+		String txt=input.nextLine();
+		int s=0,t=2;
+		for(int i=0;i<txt.length();i++)
+		{
+		    char  h= txt.charAt(i);
+			if(s<2)
+			{
+				System.out.print(Character.toUpperCase(h));
+				s++;
+				
+			}	
+			else if(s>=2)
+			{
+		    	
+		    	System.out.print(Character.toLowerCase(h));
+		    	t--;
+		    	if(t==0)
+		    	{
+		    		s=0;
+		    	}
+			}
+			
+		}
+
+	}
+
+}
