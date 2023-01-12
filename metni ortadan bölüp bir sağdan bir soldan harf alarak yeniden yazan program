@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class metni_ortadan_bölüp_bir_sağdan_soldan_yazdırma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("metni giriniz ");
+		String txt=input.nextLine();
+		if(txt.length()%2==0)
+		{
+			for(int i=0;i<txt.length()/2;i++)
+	        {
+	        	System.out.print(txt.charAt(txt.length()/2+i));
+	        	System.out.print(txt.charAt(txt.length()/2-1-i));
+	        }
+		}
+		else
+		{		
+			System.out.print(txt.charAt(txt.length()/2));
+			for(int i=1;i<=txt.length()/2;i++)
+	        {
+	        	System.out.print(txt.charAt(txt.length()/2+i));
+	        	System.out.print(txt.charAt(txt.length()/2-i));
+	        	
+	        	
+	        }
+		
+       }
+	}	
+
+}
