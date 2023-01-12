@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class metindeki_harflerin_alfabedeki_konumu_kadar_yıldız_yazdırma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("lütfen bir ifade giriniz ");
+		String txt=input.nextLine();
+        for(int i=0;i<=txt.length();i++)
+        {
+        	char h= txt.charAt(i);
+        	System.out.print(txt.charAt(i)+"= ");
+        	
+        	for(int j=1;j<=h-64;j++)
+        	{
+        		System.out.print("*");
+        	}
+        	System.out.println();
+        	
+        }
+
+	}
+
+}
