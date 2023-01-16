@@ -13,7 +13,7 @@ public class A_dizisindeki_elemanları_pozitif_negatif_diye_ayırıp_farklı_diz
 		}while(n<0);
 		
 		int[] sayi=new int[n];
-		
+	
 		for(int i=0;i<sayi.length;i++)
 		{
 			do {
@@ -23,32 +23,33 @@ public class A_dizisindeki_elemanları_pozitif_negatif_diye_ayırıp_farklı_diz
 			}while(sayi[i]==0);
 			
 		}
+		int[] C =new int[255];
+		int[] D =new int[255];
 		for(int i=0;i<sayi.length;i++)
 		{
 			if(sayi[i]<0)
 			{
+			    C[s]=sayi[i];
 				s++;
 			}
 			else if(sayi[i]>0)
 			{
+				D[k]=sayi[i];
 				k++;
 			}
 			
 		}
-		int[] C =new int[s];
-		int[] D =new int[k];
-		for(int i=0;i<sayi.length;i++)
+		System.out.println("C nin elamanları: ");
+		for(int i=0;i<s;i++)
 		{
-			if(sayi[i]<0)
-			{
-				C[i]=sayi[i];
-				
-			}
-			else if(sayi[i]>0)
-			{
-				D[i]=sayi[i];
-			}
-	
+			System.out.println( C[i]+ " ");
+
+		}
+		System.out.println("D nin elamanları: ");
+		for(int i=0;i<k;i++)
+		{
+			System.out.println( D[i]+ " ");
+
 		}
 		System.out.println("C dizisinin karakter sayısı "+s);
 		System.out.println("D dizisinin karakter sayısı "+k);
