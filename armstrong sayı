@@ -25,7 +25,7 @@ public class armstrong_sayılar {
 		{
 			System.out.println("armstrong sayıdır");
 
-     	}
+             	}
 		else
 		{
 			System.out.println("armstrong sayı değildir");
