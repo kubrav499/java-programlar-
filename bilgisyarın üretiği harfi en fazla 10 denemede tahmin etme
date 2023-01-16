@@ -1,3 +1,5 @@
+package ödevler;
+
 import java.util.Scanner;
 import java.util.Random;
 public class bilgisyarın_ürettiği_rasgele_büyük_harfi_en_fazla_10_denemede_bulma {
@@ -5,22 +7,22 @@ public class bilgisyarın_ürettiği_rasgele_büyük_harfi_en_fazla_10_denemede_
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input= new Scanner(System.in);
-		Random rnd= new Random();
-	    int x=rnd.nextInt(25)+65;
-	    int harf=(char)x;
-	    for(int i=1;i<=10;i++)
-	    {
-	    	System.out.println("tahmininizi giriniz");
-	    	int tahmin=input.nextInt();
+		Random r= new Random();
+	        int x=r.nextInt(25)+65;
+	        char harf=(char)x;
+	        for(int i=1;i<=10;i++)
+	        {
+	    	   System.out.println("tahmininizi giriniz");
+	           char tahmin=input.nextLine().charAt(0);
 	    	if(tahmin==harf)
 	    	{
-	    		System.out.println("tebrikler "+i+" tahminde girdiniz");
-	    		break;
+	    	    System.out.println("tebrikler "+i+" tahminde girdiniz");
+	    	    break;
 	    	} 
 	    }
-	    System.out.println("tahmin hakkınız bitti");
+	        System.out.println("tahmin hakkınız bitti");
 	    
-	    
+	     
 
 	}
 
