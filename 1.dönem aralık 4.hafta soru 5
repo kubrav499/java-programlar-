@@ -1,6 +1,4 @@
-import java.util.Scanner;
 
-public class bir_matrisin_sütunundaki_elemanların_çarpımından_yeni_dizi_oluşturma {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,6 +15,7 @@ public class bir_matrisin_sütunundaki_elemanların_çarpımından_yeni_dizi_olu
         		System.out.print(i+" inci satır ve "+j+" inci sütun= ");
         		a[i][j]=input.nextInt();
             }
+        
         }
 		for(int i=0; i<n;i++)
         {
@@ -30,17 +29,17 @@ public class bir_matrisin_sütunundaki_elemanların_çarpımından_yeni_dizi_olu
 		
 		for(int i=0;i<n;i++)
 		{
+			b[i]=1;
 			for(int j=0;j<n;j++)
 			{
-				b[i]*=a[i][j];
+				b[i]*=a[j][i];
 				
 			}
 		}
 		for(int i=0;i<n;i++)
 		{
-			System.out.println("b["+i+"] :"+b[i]);
+			System.out.println("b[" +i +"]:"+b[i]);
 		}
 
 	}
 
-}
