@@ -12,7 +12,7 @@ public class metindeki_harflerin_alfabedeki_konumu_kadar_yıldız_yazdırma {
         	char h= txt.charAt(i);
         	System.out.print(txt.charAt(i)+"= ");
         	
-        	for(int j=1;j<=h-64;j++)
+        	for(int j=1;j<=h-96;j++)
         	{
         		System.out.print("*");
         	}
