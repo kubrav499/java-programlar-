@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class kitaptaki_828_soru {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("n i giriniz");
+		int n=input.nextInt();
+		int[][] a= new int[n][n];
+		double[] ort= new double[n];
+		int[][] rapor= new int[n][2];
+		System.out.println("A matrisi= ");
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<12;j++)
+            {
+        		System.out.print((i+1)+"inci şirketin" + (j+1)+" inci ayının karı=");
+        		a[i][j]=input.nextInt();
+            }
+        }
+		for(int i=0; i<n;i++)
+        {
+			int t=0;
+        	for(int j=0; j<12;j++)
+            {
+        		t+=a[i][j];
+            }
+        	ort[i]=(double)t/12;
+        }
+		for(int i=0; i<n;i++)
+        {
+			int max_kar_ayı=a[i][0], min_kar_ayı=a[i][0];
+        	for(int j=1; j<12;j++)
+            {
+        		if(a[i][j]>max_kar_ayı)
+        		{
+        			max_kar_ayı=a[i][j];
+        		}
+        		if(a[i][j]<min_kar_ayı)
+        		{
+        			min_kar_ayı=a[i][j];
+        		}
+        		rapor[i][0]=max_kar_ayı; rapor[i][1]=max_kar_ayı;
+            }  
+        	
+        }
+		for(int i=0; i<n;i++)
+        {
+          System.out.println("max ay: "+rapor[i][0]+" min ay: "+rapor[i][1]+" ortalama kar "+ort[i]);
+          
+        }
+	}
+
+}
