@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class dost_sayılar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("m'i gir ");
+		int m=input.nextInt();
+		System.out.println("n'i gir ");
+		int n=input.nextInt();
+		int t=0,t1=0;
+		for(int i=1;i<m;i++)
+		{
+			if(m%i==0)
+			{
+				t+=i;
+			} 
+		}
+		for(int i=1;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				t1+=i;
+			}
+		}
+		if(t==n&&t1==m)
+		{
+			System.out.println("dost sayılar");
+		}
+		else 
+		{
+			System.out.println("dost sayı değiller");
+		}
+	}
+
+}
+
