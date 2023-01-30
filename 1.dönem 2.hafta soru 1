@@ -8,7 +8,7 @@ public class üçgeninalanı {
        int k_uzunluk=input.nextInt();
        System.out.println("yükseklik giriniz");
        int yukseklik=input.nextInt();
-       int alan=k_uzunluk*yukseklik/2;
+       int alan=(k_uzunluk*yukseklik)/2;
        System.out.println("alan"+alan);
     
        }
