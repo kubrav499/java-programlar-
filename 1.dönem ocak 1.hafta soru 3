@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class dizi_isteyip_onu_küçükten_büyüye_sıralama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("n i giriniz ");
+		int n=input.nextInt();
+		int[]array=new int[n];
+		arr_print(array);
+		arr_print1(array);
+
+	}
+
+	 public static void arr_print(int[]array)
+	    {
+		    Scanner input= new Scanner(System.in);
+	    	for(int i=0;i<array.length;i++)
+	    	{
+	    		System.out.println((i+1)+" inci karakteri giriniz ");
+	    		array[i]=input.nextInt();
+	    	}
+	    }
+    public static void arr_print1(int[]array)
+    {
+    	int max=array[0],min=array[0];
+    	for(int i=1;i<array.length;i++)
+    	{
+    		if(array[i]>max)
+    		{
+    			max=array[i];
+    			
+    		}
+    		if(array[i]<min)
+    		{
+    			min=array[i];		
+    		}
+    	}
+    	System.out.println("max: "+max+" min: "+min);
+	}
+  }
