@@ -1,0 +1,49 @@
+import java.util.Random;
+import java.util.Scanner;
+public class iki_boyutlu_dizinin_alt_üst_sınır_alarak_oluşturma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("ub yi giriniz ");
+		int ub= input.nextInt();
+		System.out.println("lb yi giriniz ");
+		int lb= input.nextInt();
+		int[][]a =array(ub,lb);
+		arr_print(a);
+	}
+	public static void arr_print(int[][]array)
+	{
+		int row= array.length;
+		int col= array[0].length;
+		for(int i=0;i<row;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				System.out.print(array[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public static int[][] array(int ub,int lb)
+	{
+		Scanner input= new Scanner(System.in);
+		Random r= new Random();
+		System.out.println("n i giriniz ");
+		int n= input.nextInt();
+		int[][]array= new int[n][n];
+		
+		int row= array.length;
+		int col= array[0].length;
+		for(int i=0;i<row;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				array[i][j]=r.nextInt(ub)+lb;
+			}
+		}
+		return array;
+	}
+
+}
