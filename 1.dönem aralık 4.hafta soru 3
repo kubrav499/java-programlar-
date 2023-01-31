@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class matriste_üçgenin_yarısını_toplama_814_iki_boyutlu_dizi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("n i giriniz");
+		int n=input.nextInt();
+		int[][] a= new int[n][n];
+		System.out.println("A matrisi= ");
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<n;j++)
+            {
+        		System.out.print(i+" inci satır ve "+j+" inci sütun= ");
+        		a[i][j]=input.nextInt();
+            }
+        }
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<n;j++)
+            {
+        		System.out.print(a[i][j]+" ");
+        		
+            }
+        		System.out.println();
+        }
+		int sum=0;
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<n;j++)
+            {
+        		if(j>i)
+        		{
+        			sum+=a[i][j];
+        		}
+            }
+        }
+		System.out.println("ana köşegen üzeri toplam= "+sum);
+
+	}
+}
