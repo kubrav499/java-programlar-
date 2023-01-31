@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class girilen_sayıya_kadar_sayıların_karelerini_toplama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(arr_print());
+
+	}
+	public static int arr_print() {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("n i giriniz ");
+		int n=input.nextInt();
+		int t=0;
+		for(int i=1;i<n;i++)
+		{
+			t+=i*i;
+		}
+		return t;
+	}
+
+
+}
