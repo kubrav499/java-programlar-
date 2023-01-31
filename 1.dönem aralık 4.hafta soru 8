@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class bir_matriste_şekil_üzerinden_toplam_816_iki_boyutlu_dizi {
+public class matriste_şekil_üzerinden_toplam_816_iki_boyutlu_dizi {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,10 +26,7 @@ public class bir_matriste_şekil_üzerinden_toplam_816_iki_boyutlu_dizi {
         		{
         			t+=a[i][j];
         		}
-        		if(i==j&&j==(n-1))
-        		{
-        			t+=a[i][j];
-        		}
+        		
         		
             }
         }
@@ -38,3 +35,4 @@ public class bir_matriste_şekil_üzerinden_toplam_816_iki_boyutlu_dizi {
 	}
 
 }
+
