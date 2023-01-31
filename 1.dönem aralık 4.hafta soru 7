@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class matrisin_her_bir_satırındaki_elemanları_büyüklüğe_göre_sıralama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("n i giriniz");
+		int n=input.nextInt();
+		int[][] a= new int[n][n];
+		int[] b= new int[n];
+		int[][]c=new int[n][2];
+		System.out.println("A matrisi= ");
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<n;j++)
+            {
+        		System.out.print(i+" inci satır ve "+j+" inci sütun= ");
+        		a[i][j]=input.nextInt();
+            }
+        
+        }
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<n;j++)
+            {
+        		System.out.print(a[i][j]);
+        		
+            }
+        	System.out.println();
+        }
+		for(int i=0; i<n;i++)
+        {
+			int max=a[i][0],min=a[i][0];
+			
+        	for(int j=1; j<n;j++)
+            {
+               if(max<a[i][j])
+               {
+            	   max=a[i][j];
+               }
+               if(min>a[i][j])
+               {
+            	   min=a[i][j];
+               }
+            }
+        	c[i][0]=max;c[i][1]=min;
+        
+        }
+		for(int i=0; i<n;i++)
+        {
+        	for(int j=0; j<2;j++)
+            {
+        		System.out.print(c[i][j]+ " ");
+        		
+            }
+        	System.out.println();
+        }
+	}
+
+}
