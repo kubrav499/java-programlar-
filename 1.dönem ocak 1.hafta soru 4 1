@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class iki_boyutlu_dizileri_tek_boyutlu_diziye_atama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		System.out.println("n i giriniz ");
+		int n=input.nextInt();
+		int[][]a=new int[n][n];
+		int[][]b=new int[n][n];	
+        arr_print(a,b);
+        int[] c= array(a,b);
+        print(c);
+        
+	}
+	    public static void print(int[]array)
+	    {
+	    	System.out.println("B dizisinin elemanları: ");
+	    	for(int i=0;i<array.length;i++)
+	    	{
+	    		System.out.print(array[i]+ " ");
+	    	}
+	    	
+	    }
+        public static void arr_print(int[][]array,int[][]array1)
+        {
+        	Scanner input = new Scanner(System.in);
+        	int row= array.length;
+        	int col=array[0].length;
+        	for(int i=0;i<row;i++)
+        	{
+        		for(int j=0;j<col;j++)
+            	{
+            		System.out.println("1.dizinin "+(i+1)+" inci satır "+(j+1)+" inci sütunu gir ");
+            		array[i][j]=input.nextInt();
+            		
+            	}
+        	}	
+        	int row1 =array1.length;
+        	int col2=array1[0].length;
+        	for(int i=0;i<row;i++)
+        	{
+        		for(int j=0;j<col;j++)
+            	{
+        			System.out.println("2.dizinin "+(i+1)+" inci satır "+(j+1)+" inci sütunu gir ");
+            		array1[i][j]=input.nextInt();
+            	}
+        	}
+        	
+        }
+        public static int[] array(int[][]array,int[][]array1) {
+        	int [] b=new int[array.length];
+        	for(int i=0;i<array.length;i++)
+        	{
+        		for(int j=0;j<array[0].length;j++)
+        		{
+        			b[i]=array[i][j]+array1[i][j];
+        		}
+        		
+        	}
+        	
+        	return b;
+        }
+          
+        
+        
+}
