@@ -8,7 +8,8 @@ public class iki_boyutlu_dizileri_tek_boyutlu_diziye_atama {
 		int n=input.nextInt();
 		int[][]a=new int[n][n];
 		int[][]b=new int[n][n];	
-        arr_print(a,b);
+        arr_print(a);
+        arr_print(b);
         int[] c= array(a,b);
         print(c);
         
@@ -22,7 +23,7 @@ public class iki_boyutlu_dizileri_tek_boyutlu_diziye_atama {
 	    	}
 	    	
 	    }
-        public static void arr_print(int[][]array,int[][]array1)
+        public static void arr_print(int[][]array)
         {
         	Scanner input = new Scanner(System.in);
         	int row= array.length;
@@ -31,22 +32,12 @@ public class iki_boyutlu_dizileri_tek_boyutlu_diziye_atama {
         	{
         		for(int j=0;j<col;j++)
             	{
-            		System.out.println("1.dizinin "+(i+1)+" inci satır "+(j+1)+" inci sütunu gir ");
+            		System.out.println((i+1)+" inci satır "+(j+1)+" inci sütunu gir ");
             		array[i][j]=input.nextInt();
             		
             	}
         	}	
-        	int row1 =array1.length;
-        	int col2=array1[0].length;
-        	for(int i=0;i<row;i++)
-        	{
-        		for(int j=0;j<col;j++)
-            	{
-        			System.out.println("2.dizinin "+(i+1)+" inci satır "+(j+1)+" inci sütunu gir ");
-            		array1[i][j]=input.nextInt();
-            	}
-        	}
-        	
+      
         }
         public static int[] array(int[][]array,int[][]array1) {
         	int [] b=new int[array.length];
@@ -54,10 +45,11 @@ public class iki_boyutlu_dizileri_tek_boyutlu_diziye_atama {
         	{
         		for(int j=0;j<array[0].length;j++)
         		{
-        			b[i]=array[i][j]+array1[i][j];
+        			b[i]+=array[i][j]+array1[i][j];
         		}
         		
         	}
+        	System.out.println(array[0].length);
         	
         	return b;
         }
