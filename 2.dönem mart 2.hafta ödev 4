@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class bir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		long start = System.currentTimeMillis();
+		
+		int[] array= creatarray();
+		System.out.println("sort olmadan önceki hali: ");
+		printarray(array);
+		
+		int[] returnarray = selectionsort(array);
+        printarray(returnarray);
+     
+		
+		long elapsedTimeMillis = System.currentTimeMillis()-start;
+		
+
+		float elapsedTimeSec = elapsedTimeMillis/1000F;
+
+		// Get elapsed time in minutes
+		float elapsedTimeMin = elapsedTimeMillis/(60*1000F);
+
+		// Get elapsed time in hours
+		float elapsedTimeHour = elapsedTimeMillis/(60*60*1000F);
+
+		// Get elapsed time in days
+		float elapsedTimeDay = elapsedTimeMillis/(24*60*60*1000F);
+		
+		System.out.print(elapsedTimeSec);
+
+	}
+	public static int[] creatarray()
+	{
+		int [] array= new int[1000];
+		
+		for(int i=0;i<1000;i++)
+		{
+			array[i]=(int)((Math.random()*100));
+		}
+		
+	    return array;
+	    
+	}
+	 public static int[] selectionsort(int[]array)
+	    {
+	    	for(int i=0;i<array.length;i++)
+	    	{
+	    		for(int j=i+1;j<array.length;j++)
+	    		{
+	    			if(array[i]>array[j])
+	    			{
+	    				int tmp=array[i];
+	    				array[i]=array[j];
+	    				array[j]=tmp;
+	    			}
+	    		}
+	    	}
+	    	
+		return array;    	
+ 	}
+
+	 public static void printarray(int[]array)
+		{
+			for(int i=0;i<array.length;i++)
+			{
+				System.out.print(array[i]+" ");
+			}
+			System.out.println();
+    	}
+}
+
