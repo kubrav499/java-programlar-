@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+public class dört {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input= new Scanner(System.in);
+		long start = System.currentTimeMillis();
+		
+		int[] array= creatarray();
+		System.out.println("sort olmadan önceki hali: ");
+		printarray(array);
+		
+		int[] returnarray = combsort(array);
+        printarray(returnarray);
+        
+		
+		long elapsedTimeMillis = System.currentTimeMillis()-start;
+		
+
+		float elapsedTimeSec = elapsedTimeMillis/1000F;
+
+		// Get elapsed time in minutes
+		float elapsedTimeMin = elapsedTimeMillis/(60*1000F);
+
+		// Get elapsed time in hours
+		float elapsedTimeHour = elapsedTimeMillis/(60*60*1000F);
+
+		// Get elapsed time in days
+		float elapsedTimeDay = elapsedTimeMillis/(24*60*60*1000F);
+		
+		System.out.print(elapsedTimeSec);
+
+	}
+	public static int[] creatarray()
+	{
+		int [] array= new int[1000];
+		
+		for(int i=0;i<1000;i++)
+		{
+			array[i]=(int)((Math.random()*100));
+		}
+		
+	    return array;
+	    
+	}
+	public static int[] combsort(int[] array) {
+        int n = array.length;
+        int gap = n; 
+        boolean swapped = true;
+
+        while (gap != 1 || swapped) {
+            gap = getNextGap(gap);
+            
+            swapped = false;
+
+            for (int i = 0; i < n - gap; i++) {
+                if (array[i] > array[i + gap]) {
+                    int temp = array[i];
+                    array[i] = array[i + gap];
+                    array[i + gap] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+        
+        return array;
+    }
+	
+	private static int getNextGap(int gap) {
+	    // Shrink gap by a factor of 1.3
+	        gap = (gap * 10) / 13;
+	        if (gap < 1) {
+	            return 1;
+	        }
+	        return gap;
+	 }
+	
+	 public static void printarray(int[]array)
+		{
+			for(int i=0;i<array.length;i++)
+			{
+				System.out.print(array[i]+" ");
+			}
+			System.out.println();
+		}
+}
+
+
