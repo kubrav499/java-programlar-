@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class sayının_basmaklarını_ingilizce_kelime_olarak_yazma_dördüncü_hafta_iki {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		String [] array= {"zero","one","two","three","four","five","six","seven","eight","nine"};
+		System.out.print("bir sayı gir: ");
+		int num =input.nextInt();
+		String[] array1=new String[255];
+		int s=0;	
+		String [] arr = num_names1(num,s,array,array1);
+    System.out.print(arr);
+	}
+  public static String [] num_names1(int num,int s,String[] array,String[] array1)
+	{	
+		if(num>0 )
+		{
+			 int value=(int)num % 10;
+			 array1[s]=array[value];
+			 s++;
+			 return num_names1((int)num/10,s,array,array1);
+		}
+		else
+		{
+			 while(s!=0)
+			 {
+				 s--;
+				 System.out.print(array1[s]+" ");				
+			 }
+		}
+   	return array1;
+	}
+}
