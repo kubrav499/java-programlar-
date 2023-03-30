@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class mükemmel_sayılar_dördüncü_hafta_bir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input= new Scanner(System.in);
+        System.out.println("cevap girilen sayıya eşit ise mükemmel sayı -1 ise mükemmel sayı değildir.");
+        System.out.print("bir sayı giriniz: ");
+        int num =input.nextInt();
+        int s=1,t=0;
+        int a = mükemmelsayı(num,s,t);
+        System.out.print(a);
+	}
+    public static int mükemmelsayı(int num,int s,int t)
+    {
+    	if(s!=num)
+    	{
+    		if(num%s==0) 
+    		{
+    			t+=s;
+    		}
+    		s++;
+    		return mükemmelsayı(num,s,t);
+    	}
+    	else 
+    	{
+    		if(num==t)
+    		{		
+    			
+    			return t;
+    		}
+    		
+    	}
+		return -1;
+    	
+    	
+    }
+}
