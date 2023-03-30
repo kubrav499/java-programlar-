@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class linaersearch_binarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+    long start = System.currentTimeMillis();
+		int[] array= {1,3,5,7,9};
+		int index= linearsearch(array,16);
+		System.out.println("index:"+index);
+    
+    long elapsedTimeMillis = System.currentTimeMillis()-start;
+
+		float elapsedTimeSec = elapsedTimeMillis/1000F;
+
+		// Get elapsed time in minutes
+		float elapsedTimeMin = elapsedTimeMillis/(60*1000F);
+
+		// Get elapsed time in hours
+		float elapsedTimeHour = elapsedTimeMillis/(60*60*1000F);
+
+		// Get elapsed time in days
+		float elapsedTimeDay = elapsedTimeMillis/(24*60*60*1000F);
+         
+		System.out.print(elapsedTimeSec);
+		
+        
+	}
+  public static int linearsearch(int[]array,int element)
+     {
+        for(int i=0;i<array.length;i++)
+    	  {
+    		  if(array[i]==element)
+    	   	{
+    		  	return i;
+    	  	}
+      	}
+      	return -1;
+     }
