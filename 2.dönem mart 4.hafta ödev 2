@@ -9,26 +9,24 @@ public class sayının_basmaklarını_ingilizce_kelime_olarak_yazma_dördüncü_
 		int num =input.nextInt();
 		String[] array1=new String[255];
 		int s=0;	
-		String [] arr = num_names1(num,s,array,array1);
-    System.out.print(arr);
+		num_names1(num,s,array,array1);
 	}
-  public static String [] num_names1(int num,int s,String[] array,String[] array1)
+        public static void num_names1(int num,int s,String[] array,String[] array1)
 	{	
 		if(num>0 )
 		{
-			 int value=(int)num % 10;
-			 array1[s]=array[value];
-			 s++;
-			 return num_names1((int)num/10,s,array,array1);
+		    int value=(int)num % 10;
+		    array1[s]=array[value];
+		    s++;
+		    num_names1((int)num/10,s,array,array1);
 		}
 		else
 		{
-			 while(s!=0)
-			 {
-				 s--;
-				 System.out.print(array1[s]+" ");				
-			 }
+		    if(s!=0)
+		    {
+			System.out.print(array1[s-1]+" ");
+			num_names1(num,s-1,array,array1);
+		     }
 		}
-   	return array1;
 	}
 }
