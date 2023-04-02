@@ -4,7 +4,6 @@ public class mükemmel_sayılar_dördüncü_hafta_bir {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         Scanner input= new Scanner(System.in);
-        System.out.println("cevap girilen sayıya eşit ise mükemmel sayı -1 ise mükemmel sayı değildir.");
         System.out.print("bir sayı giriniz: ");
         int num =input.nextInt();
         int s=1,t=0;
