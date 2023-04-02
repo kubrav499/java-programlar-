@@ -8,31 +8,19 @@ public class mükemmel_sayılar_dördüncü_hafta_bir {
         System.out.print("bir sayı giriniz: ");
         int num =input.nextInt();
         int s=1,t=0;
-        int a = mükemmelsayı(num,s,t);
-        System.out.print(a);
+        System.out.print("sayının kendisi hariç bölenlerinin toplamı : "+ mükemmelsayı(num,s,t));
 	}
-    public static int mükemmelsayı(int num,int s,int t)
-    {
-    	if(s!=num)
-    	{
+        public static int mükemmelsayı(int num,int s,int t)
+        {
+    	    if(s!=num)
+    	    {
     		if(num%s==0) 
     		{
-    			t+=s;
+    		     t+=s;
     		}
     		s++;
     		return mükemmelsayı(num,s,t);
-    	}
-    	else 
-    	{
-    		if(num==t)
-    		{		
-    			
-    			return t;
-    		}
-    		
-    	}
-		return -1;
-    	
-    	
+    	    }
+	return t;
     }
 }
